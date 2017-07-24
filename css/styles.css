@@ -52,9 +52,15 @@ html{
 	margin: 0 auto;
 	padding: 30px 10px 0;
 }
+a:hover{
+	text-decoration: none;
+}
 .title{
 	text-align: center;
 	padding-top: 50px;
+}
+.title a{
+	text-decoration: none;
 }
 .title h1{
 	font-family: 'Futura';
@@ -99,17 +105,19 @@ h2, h3, h4, h5, p{
 	padding: 10px 0;
 }
 .article-list-title{
-	font-size: 2.5em;
+	font-size: 2em;
 	margin-top: 50px;
 }
 .date{
 	font-style: italic;
 	font-family: 'Lora', Georgia;
 	margin: 15px 0;
+	font-size: 0.8em;
+	color: #6d6d6d;
 }
 .blurb{
 	font-family: 'Lora', Georgia;
-	font-size: 1.5em;
+	font-size: 1em;
 }
 .article-list a{
 	color: black;
@@ -125,11 +133,72 @@ h2, h3, h4, h5, p{
 .article-list hr:last-child{
 	margin: 50px auto 0;
 }
+.aboutMe{
+	text-align: center;
+	padding-bottom: 40px;
+}
+.aboutMe h2{
+	margin-bottom: 30px;
+}
+.aboutMe .description{
+	width: 300px;
+	margin: 0 30px;
+	display: inline-block;
+/*	text-align: left;*/
+	vertical-align: top;
+	font-family: 'Lora', Georgia;
+	line-height: 1.4em;
+	padding: 0;
+	font-size: 1em;
+	max-width: 300px;
+}
+.aboutMe img{
+	display: inline-block;
+}
+.aboutMe .circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  font-size: 1em;
+  color: #fff;
+  line-height: 160px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  font-family: 'Futura';
+  position: relative;
+  text-decoration-line: underline;
+  text-underline-position: under;
+}
+.aboutMe .circle:hover{
+	border-radius: 0;
+	text-decoration-line: none;
+}
+hr{
+	width: 250px;
+	height: 5px;
+	border: 0;
+	background-color: #ddd;
+	margin: 0 auto;
+}
 .footerText{
 	font-family: 'Lora', Georgia;
 	color: #6d6d6d;
 	text-align: center;
-	padding: 30px 0;
+	padding: 30px;
+	clear: both;
+}
+.spanner{
+	color: white;
+	padding: 15px 0 30px;
+}
+.spanner h2{
+	font-size: 3em;
+}
+.spanner h3{
+	font-size: 1.5em;
+	font-weight: 400;
+	font-style: italic;
 }
 @media only screen and (max-width: 850px) {
     .content {
@@ -139,6 +208,18 @@ h2, h3, h4, h5, p{
     html{
     	font-size: 16px;
     }
+}
+@media only screen and (max-width: 740px) {
+	.aboutMe img, .aboutMe div, .aboutMe .circle{
+		display: block;
+		margin: 20px auto;
+	}
+	.aboutMe .description{
+		text-align: left;
+		padding: 20px 0;
+		width: auto;
+		margin: 0;
+	}
 }
 @media only screen and (max-width: 500px) {
     .title {
