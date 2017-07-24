@@ -43,13 +43,14 @@ table {
 }
 /*			^ CSS Reset ^			*/
 html{
-	font-size: 16px;
+	font-size: 18px;
 	font-family: 'Futura';
+	min-width: 320px;
 }
 .content{
 	width: 800px;
 	margin: 0 auto;
-	padding: 30px 10px;
+	padding: 30px 10px 0;
 }
 .title{
 	text-align: center;
@@ -65,29 +66,99 @@ html{
 	color: black;
 }
 nav{
-	margin: 50px auto 50px;
+	margin: 50px auto;
 	text-align: center;
 }
 nav ul{
 	display: inline-block;
 	margin: 0 10px;
+	font-family: 'Lora', Georgia;
+	/*text-transform: uppercase;*/
 }
 nav a{
 	padding: 10px;
 	color: black;
 }
-nav a:hover{
+nav a:hover, nav .active{
 	border-bottom: 3px solid black;
 	transition: border 0.2s;
 }
+
 .content h2{
 	font-size: 2em;
 }
 .content h3{
+	font-weight: 700;
+}
+.content h3, .content p{
 	font-size: 1em;
+	font-family: 'Lora', Georgia;
+	line-height: 1.4;
 }
 h2, h3, h4, h5, p{
 	padding: 10px 0;
+}
+.article-list-title{
+	font-size: 2.5em;
+	margin-top: 50px;
+}
+.date{
+	font-style: italic;
+	font-family: 'Lora', Georgia;
+	margin: 15px 0;
+}
+.blurb{
+	font-family: 'Lora', Georgia;
+	font-size: 1.5em;
+}
+.article-list a{
+	color: black;
+	text-decoration: none;
+}
+.article-list hr{
+	width: 250px;
+	height: 5px;
+	border: 0;
+	background-color: #ddd;
+	margin: 50px auto;
+}
+.article-list hr:last-child{
+	margin: 50px auto 0;
+}
+.footerText{
+	font-family: 'Lora', Georgia;
+	color: #6d6d6d;
+	text-align: center;
+	padding: 30px 0;
+}
+@media only screen and (max-width: 850px) {
+    .content {
+        width: auto;
+        padding: 20px;
+    }
+    html{
+    	font-size: 16px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .title {
+    	padding-top: 10px;
+    }
+    nav{
+    	margin: 15px auto 25px;
+    }
+    nav ul{
+    	margin: 0;
+    }
+    html{
+    	font-size: 14px;
+    }
+}
+@media only screen and (max-width: 360px) {
+	.title, nav{
+		text-align: left;
+	}
+
 }
 
 
