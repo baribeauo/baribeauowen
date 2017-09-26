@@ -1,0 +1,146 @@
+
+body, div{
+	margin: 0;
+}
+html{
+	font-family: Proxima Nova, Helvetica, Arial, sans-serif;
+}
+header{
+	width: 100%;
+	background-color: #2e2e2e;
+}
+.centre{
+	margin: 0 auto;
+}
+#logo{
+	width: 100%;
+	margin: 60px 0 50px;
+}
+.logobox{
+	width: 350px;
+	margin: 0 auto;
+}
+.navItem{
+	display: inline-block;
+	padding: 10px 30px;
+	font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+	color: #9ADE00;
+	margin: 20px 10px;
+	text-transform: uppercase;
+	border-bottom: 2px solid #9ADE00;
+}
+nav{
+	text-align: center;
+	background-color: #282828;
+}
+.navItem:hover{
+	background-color: #9ade00;
+	color: #3e3e3e;
+	transition: 0.2s;
+}
+.content{
+	width: 900px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+.content h2{
+	font-size: 72px;
+	font-family: Proxima Nova, Helvetica;
+	color: white;
+	margin: 0;
+}
+.half{
+	width: 48%;
+	display: inline-block;
+	margin: 0 0.5%;
+}
+.half img{
+	width: 100%;
+}
+.whole{
+	width: 100%;
+}
+footer{
+	background-color: #2e2e2e;
+	margin: 0;
+	padding: 40px;
+	text-align: center;
+	font-family: Proxima Nova, Helvetica, Arial;
+}
+.parallax-window{
+	min-height: 400px;
+	display: flex;
+	justify-content: center;
+}
+.parallax-window h2{
+	font-size: 64px;
+	font-family: Proxima Nova Condensed;
+	text-transform: uppercase;
+	color: #fff;
+	align-self: center;
+	font-weight: normal;
+
+}
+.parallax-window mark{
+	background-color: #2e2e2e;
+	color: #fff;
+	padding: 20px;
+}
+.grey{
+	background-color: #3c3c3c;
+}
+.green{
+	background-color: #9ADE00;
+}
+.grey h2{
+	color: #fff;
+	text-align: center;
+}
+.grey h3{
+	text-align: center;
+	color: #fff;
+}
+.grey h4{
+	color: #9ADE00;
+	text-align: center;
+	font-size: 32px;
+	font-style: oblique;
+	font-weight: normal;
+	border-bottom: 3px solid #9ADE00;
+	margin: 0;
+}
+.grey h4:hover{
+	color: #fff;
+	border-color: #fff;
+	cursor: pointer;
+}
+.linkBox{
+	width: 330px;
+	margin: 0 auto;
+	padding: 40px;
+}
+.bigList{
+	font-size: 48px;
+	color: white;
+	font-style: heavy;
+	margin-top: 30px;
+}
+.bigButton{
+	width: 200px;
+	padding: 40px;
+	align-self: center;
+	background-color: #9ADE00;
+	color: #2e2e2e;
+	text-align: center;
+	margin: 0 auto;
+}
+.bigButton:hover{
+	background-color: #fff;
+	cursor: pointer;
+}
+
+
+
+
+
+
